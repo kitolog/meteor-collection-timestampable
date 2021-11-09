@@ -6,9 +6,13 @@
 
 Add timestamps to collections.
 
+[!] Fork of zimme:collection-timestampable plugin
+
+Upgraded dependencies to support meteor 2.5 
+
 ### Install
 ```sh
-meteor add zimme:collection-timestampable
+meteor add kitolog:collection-timestampable
 ```
 
 ### Usage
@@ -123,11 +127,3 @@ CollectionBehaviours.configure('timestampable',{
 * This package attaches a schema to the collection(s) if `aldeed:collection2` is
 used by the application. If `aldeed:autoform` is available too, it adds
 `aldeed:autoform` specific schema definitions
-
-[Code Climate]: https://codeclimate.com/github/zimme/meteor-collection-timestampable
-[Code Climate Badge]: http://img.shields.io/codeclimate/github/zimme/meteor-collection-timestampable.svg
-[CollectionBehaviours]: https://atmospherejs.com/zimme/collection-behaviours
-[Gitter]: https://gitter.im/zimme/meteor-collection-timestampable
-[Gitter Badge]: https://img.shields.io/badge/gitter-join_chat-brightgreen.svg
-[License]: https://github.com/zimme/meteor-collection-timestampable/blob/master/LICENSE.md
-[License Badge]: https://img.shields.io/badge/license-MIT-blue.svg
