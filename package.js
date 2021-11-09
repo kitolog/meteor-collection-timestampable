@@ -2,7 +2,7 @@ Package.describe({
   git: 'https://github.com/zimme/meteor-collection-timestampable.git',
   name: 'zimme:collection-timestampable',
   summary: 'Add timestamps to collections',
-  version: '1.0.9'
+  version: '1.0.10'
 });
 
 Package.onUse(function(api) {
@@ -15,14 +15,14 @@ Package.onUse(function(api) {
   ]);
 
   api.use([
-    'matb33:collection-hooks@0.7.6',
-    'zimme:collection-behaviours@1.1.0'
+    'matb33:collection-hooks@1.1.0',
+    'zimme:collection-behaviours@1.1.3'
   ]);
 
   api.use([
-    'aldeed:autoform@4.0.0 || 5.0.0',
-    'aldeed:collection2@2.0.0',
-    'aldeed:simple-schema@1.0.3'
+    'aldeed:autoform@7.0.0',
+    'aldeed:collection2@3.2.2',
+    'aldeed:simple-schema@1.5.4'
   ], ['client', 'server'], {weak: true});
 
   api.imply('zimme:collection-behaviours');
